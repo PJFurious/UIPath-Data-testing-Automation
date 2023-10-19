@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CR_Customers" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1032,6033" sap2010:WorkflowViewState.IdRef="CR_Customers_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CR_Customers" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1032,6035" sap2010:WorkflowViewState.IdRef="CR_Customers_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -111,7 +111,7 @@
       <AssemblyReference>BouncyCastle.Crypto</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CR_Products" sap:VirtualizedContainerService.HintSize="967,5968" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CR_Products" sap:VirtualizedContainerService.HintSize="967,5970" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtOrders" />
       <Variable x:TypeArguments="x:String" Name="OrderDate" />
@@ -128,25 +128,25 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="905,5857" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="905,5859" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="871,5770" sap2010:WorkflowViewState.IdRef="Sequence_9">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="871,5772" sap2010:WorkflowViewState.IdRef="Sequence_9">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="809,5659" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="G:\My Drive\University\Semester 2\CMPG 323\Project 4\CMPG323 EcoPower Logistics Data.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="809,5661" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="RawValue" ResizeWindow="None" WorkbookPath="CMPG323 EcoPower Logistics Data.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="775,5390" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="775,5392" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="variable1" />
                     </Sequence.Variables>
@@ -156,13 +156,13 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="713,169" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Orders&quot;)]" SaveTo="[dtOrders]" />
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Index - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="713,5070" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="358e0f2d-58b5-489d-80f5-71f1c0bb31c2" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Index - EcoPower_Logistics" sap:VirtualizedContainerService.HintSize="713,5072" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsCVEnabled="False" ScopeGuid="358e0f2d-58b5-489d-80f5-71f1c0bb31c2" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="679,4853" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="679,4855" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -230,7 +230,7 @@
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Create" CvElementArea="157, 490, 523, 50" CvTextArea="174, 507, 10, 17" CvTextArgument="1" CvType="InputBox" DesignTimeRectangle="159, 470, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT OrderDate'" FullSelectorArgument="&lt;webctrl id='OrderDate' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='OrderDate' tag='INPUT' type='datetime-local' class='form-control' aaname='Order Date' /&gt;" Guid="512b91cc-7f3b-4a13-9d7d-aedfd4995930" InformativeScreenshot="0e4fc74cb63ff84026edeb56a27f7543.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                 <uix:Target CvTextArea="158, 446, 99, 17" CvTextArgument="Order Date" CvType="Text" DesignTimeRectangle="159, 440, 98, 30" ElementType="Text" FriendlyName="'Order Date'" FullSelectorArgument="&lt;webctrl aaname='Order Date' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Order Date' tag='LABEL' type='' class='control-label' check:innerText='Order Date' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAAiCAYAAACtFqwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU8SURBVGhD7ZjBayJJFMb3X8lhIXsyJ28ZcpEcIgPjMJAIC8ocDHNQcpDJycAEA0oOHnIQBA+Ch4a+SMMSBiQIYjwk62GyYTPBZTcKAQNhlA14cPbbV9Wl6S5t0zqZsQ/9QR26LLveq9+req/6J7hypFwwDpULxqFywThULhiHygXjULlgHCoXjEPlgnGoXDAO1cLBdNQIln6OQLkVHa64LMF0zlQcxkPweX+hhWPNC18ojly1hf5ADHoG/XAwZ2nhj7GtwPsygO29Ik6aPTFwsRoHM2jheHeDG7y8GkEiU0SpqqGQSSP2xsv7PdEirh/E+G/UosBs5+uoVVljvmWQNAShb1fDzdzB18N5Po7X2YZ4nk8SmD7OUwzKBt5rLdFnVvc0A7+HoEU0dETft2hRYJJn4tmoQQ8XhQiWWVDuVWg15tEdlLcEOPWcYD5l8YKMCiuToQzV/S1Oxq8gUZ3PdKMcBUboIsuC04ejT6JjJj07mD5qH1aw5NlH7an1HlziaI0mN0YVd5gWuH2H2lEEXtpVS2/Vx101oP4cbfFVmoNFJB2TyXILN1ZgHpoopaKj48WzHkVSa0pR3ECSBZLaQuc0izB/9xOQbYDBvYZtGvMieyk6dHWqecRCG/DQbzwvbe5DuXq0SA8y3V5jM81lyy8TGLHYB3XxPF21AxrryeBcPOsOhxDbCSFRvhOdQpS3lAiDHkAsp+lnu0ZOvqSCYt1H/5MW84EWfJ3eT0bnND0XlI5CfEF8psXSwQR34gh+qKBjJy/YATOMemNg8f95EUypOGH2l4t4z2z0RFAStvfbDZ6zkq+oP5oXOayO63v9d/t+mcAIJ584xoa6LgTI0LQEhqLsyDwBkx5JG7QYUlywnccMNYFheY5graVRkwqMG4W9J47jrugQNi+tZXFhN1nbAiMCzwimQUWCYXdwXeXhH1szq6NsFr++A5jkqXgeiXbLr2RoVINh3pFulBD9zwCmX0GC3uMvNEWHQW0VQdOiCjA2dzmXLTA9HO9IYCZKzG+CYAFmJr8kMIcsL8xylLFIFc+6wyHKMeJ5JN34iQaRxpL/rYowc3ZKC6vDo3K2YOKyBaaJAjuOpMqs375EqZjB4V4U/leBxzueHTAz+WUCI6LEzrEgkv+ycXLu8KTEO33xrMBs5yqjM1pu5+3hcunvNjr0pOyA+buI18wGbXjZpGMoE+CVqHczjmQmD6VMtpxRnqFxs4Cx55cJDE1f3ec1vL1yWSonLcFMqOAM0o9Ew/+6HxEjG6x2mFnfAcywUKFccD40WCzq2LoM6nx+W2Bm8ksCw15aYkZRoh6rrIQ65TS/YPpoYtNCW4IBJT1RxsrHXJfOXXZ8mv7XQylKfROS5LieGUz3Egr/6iEVKo0MD1g5f/YreiBPBBORL+Cz+DUGhkR1diEqPr28oW2bY+VhBUru8ZOMb/fj+CeLKWBwqyHMAHi2kFT1rXyiphFkd5kDKfkzUTLk472h0fgat2Ef4R2jw/ODkT/JJN6J+wnNmWtI38v6dT2ApDLXS2U6u+/Iu0MPRApulcaWsygNf7bt1yQwQp1qkYwN6BdFbvAG/O/SUM4sFmEaGKZOHbn4lngf3V/oXSUqPy1v/rfG8Yb5G8b55wdjap5V+ENxHKoNy7tQ/0pFYnNV3yE0PpyqUHDq848dWw+XyEXEWO8Wldmin8mWX1PAuFqsXDAOlQvGoXLBOFQuGIfKBeNQuWAcqjEw9196+PxXC40/rvH7xWe3LaiZwLRv7/Bn8x986f2Lr1//E72ufryA/wEdY4djfxbXEQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
                                               </scg:List>
                                             </uix:TargetAnchorable.Anchors>
@@ -269,7 +269,7 @@
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Create" CvElementArea="157, 544, 524, 51" CvTextArea="174, 562, 10, 17" CvTextArgument="1" CvType="InputBox" DesignTimeRectangle="159, 547, 520, 47" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'1'" FullSelectorArgument="&lt;webctrl id='CustomerId' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='CustomerId' tag='SELECT' type='' class='form-control' aaname='Customer ID' /&gt;" Guid="a5d2efca-5292-432a-93f8-6cfee8ea1a62" InformativeScreenshot="67803d12c1d958f69be9e73e3cfc728a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                 <uix:Target CvTextArea="158, 523, 111, 17" CvTextArgument="Customer ID" CvType="Text" DesignTimeRectangle="159, 517, 110, 30" ElementType="Text" FriendlyName="'Customer ID'" FullSelectorArgument="&lt;webctrl aaname='Customer ID' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Customer ID' tag='LABEL' type='' class='control-label' check:innerText='Customer ID' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAiCAYAAACDU42KAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVjSURBVGhD7Zu/S6NJGMfvX0khaBWrdMo2wSKyYETYpIpcEbGIWIS9QhIwREiwSJEiENhCSBF4YQkvyHEgISCawpzFZuVuxeMuEYQIyyonpMje9555Z159f8ZERS7vzRemeCfzzszzfGaeZ+aF/ACDLq+u8dvFX/h2+ze+f/9H1EpNgkwgmb5+u8WXP7o4/XyOX9tfZJmQYgMpNZmSID0iCdIjkiA9IgnSI5IgPSIJ0iOSID0iCdIjcgf59Qy1QhLRhQB8UzP3xb8QRvlUtJF6uk7ymj+zJ+KZ6UrBqsHXRp9HkwVUT65FQ7scQXbULQRZJ4EQ1tIFlJUGjtQKdgsFpNZDKBoHf2HdnHzAxrsSWuLZsxoCcnFHxdFhk0oD1XIBu+kEFudmtfbTzDc3or1BNpAdJY7pqVnqrIHeQFS+ono0vm8q/78Guao47LxBH52DDN9gKxWcW9iYQYqOgrlT9EXVa0uCdAEpdLOfpI02gzX1VtRwmUC2i0H4/BnU70TFozpF1m1gbaJxVK/EM9PgGkdlQ971z2E5qaLDfnPJDz5aVPca3KKt5rH2dk4zxkeRI/A2gax6YVt49wuCjVlMIBhg7QNYTtN4bDWb6qmfeAlHPf6uSWLOy3pom4tgo9y0RCvdD130jktY1dpabLfqiSAxOEPxDc158xcYI6wB5AX2lqhBujHGbhwH5C1+3iQDAzEUVRb/m6greTK6wHdfv4sW1dV2wvReAmUtR1D5Xay8QRe1BFsAAURzCura7yrKm2ENqjWKcJBbyOYiiBZ5zqkVY/BT2/lcA/VcCMGfKrwftYBlP9m+UELbCIjGrMZpzv4IsuycQG3rlS0sUttpkyO5H6KbtEi3R0xJTwVJauXY4jNHLQNIPpnFvQvxPIrGANlTtUlGq11RIWQx2i208voQGW5fZjyvB1H8JCpIvP0Mlk329MkJFHWofjqu8J0pdKMmqJ76OBMVJN4H2XApKoT6x3nMm9pyP/jeWBbCMD0DZKcao3cfAflYJ2aNAbLfRIqtZIsDrXIGKaJFQjWFk3sNaB6s78JDGOb9xOwQGhnNgamGZUFcKohS/ca+nnuGRKhB02K3ALnTFM8j6Bkg2yW2GIeA3GXhZZzJjAOS1NnnYYnlxlUKj61L++5yBsnHcY8W16j+SP3GVehpzrkfkpMDmWxOFHCGlfv8zdvaos0wPRlkH/U0jb1EJ1dRw2QAyXIYNRgnPIwJUhPlwqNKRhwI6JpDu8ie2/47IIPb+p3Ooej5e5gf3PRUkCKyzRtzAMkAktocZrQ7JDt9jSZugDGk6eKOdACpi51AP7A2syZjnAGMFlrnSw/GPR+kOB2OdPh7LZAsx4foPbtfTSDZyq6xUxodKt6ro8AUDrZeUAdUv0L1xgHZ79adbstLDwugZrkKdCoRbV7uh52Qw0HlOSDFdYzZYMmzdr0CSHYNKkRcN5oFJOmOIGjHfNppc3GkChXUWBjRPtHlsREzf6LrfWROnIE/VuLtDhRk3wWQSm9xJ+gg2SSpP/0Yz64OxRiNY723koHadWJboTYNFD+K3a5fBRyvH3bjXgIk7gjQAi1If5jujg8htlYhP6wYPyO+LEjrJ7psMoKAdrYIu24wO0ih3mEFqfUw74A610oghMVYErU/RSNNfZwrGcOFOY7iMRmkTdQAsn+GvWRMXMB5X9F0BS3bJbyPdjkuxqULvDEv0qpsUX59+JAfQHA9j+qp3YEvApLp5gy1nP7hgAod1JgPygddQ8h9WZDcNr2QjUsJpCoNnDvmFS5XkFKTJQnSI5IgPSIJ0iOSID0iCdIjkiA9IhtI+be6ySwmkPKPrpMq4F+oMICx5iU39QAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
                                               </scg:List>
                                             </uix:TargetAnchorable.Anchors>
@@ -280,7 +280,7 @@
                                         <uix:NTypeInto.Target>
                                           <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Create" DesignTimeRectangle="159, 624, 520, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT DeliveryAddress'" FullSelectorArgument="&lt;webctrl id='DeliveryAddress' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='DeliveryAddress' tag='INPUT' type='text' class='form-control' aaname='Delivery Address' /&gt;" Guid="79cf063e-c8f2-4b80-b1d6-a610e791a882" InformativeScreenshot="df3b3240c176148a13f163b5728c9100.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                 <uix:Target DesignTimeRectangle="159, 594, 147, 30" ElementType="Text" FriendlyName="'Delivery Address'" FullSelectorArgument="&lt;webctrl aaname='Delivery Address' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Delivery Address' tag='LABEL' type='' class='control-label' check:innerText='Delivery Address' /&gt;" SearchSteps="FuzzySelector" />
                                               </scg:List>
                                             </uix:TargetAnchorable.Anchors>
@@ -308,7 +308,7 @@
                                         <uix:NGetText.Target>
                                           <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Details/2133793" DesignTimeRectangle="419, 480, 1375, 30" DesignTimeScaleFactor="1.25" FriendlyName="'ytryrtre'" FullSelectorArgument="&lt;webctrl idx='2' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DD' class='col-sm-10' /&gt;" Guid="bf89e21e-5ad8-434b-9aa5-8424ad2cc4da" InformativeScreenshot="d9d3901f0c395f0b776f7f96d8b527bd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Details - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                 <uix:Target DesignTimeRectangle="144, 480, 275, 40" FriendlyName="'Delivery Address'" FullSelectorArgument="&lt;webctrl idx='2' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='col-sm-2' aaname='             Delivery Address         ' check:innerText='Delivery Address' /&gt;" SearchSteps="FuzzySelector" />
                                               </scg:List>
                                             </uix:TargetAnchorable.Anchors>
@@ -319,7 +319,7 @@
                                         <uix:NGetText.Target>
                                           <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Details/2133793" DesignTimeRectangle="419, 440, 1375, 30" DesignTimeScaleFactor="1.25" FriendlyName="'10/12/2023 7:23:00 PM'" FullSelectorArgument="&lt;webctrl tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DD' type='' class='col-sm-10' /&gt;" Guid="f9d1c5bb-3884-418b-8584-9e2672458e13" InformativeScreenshot="469f867bd3e44ea3c0b3b96f4f215e5d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Details - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                 <uix:Target DesignTimeRectangle="144, 440, 275, 40" FriendlyName="'Order Date'" FullSelectorArgument="&lt;webctrl tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DT' type='' class='col-sm-2' aaname='             Order Date         ' check:innerText='Order Date' /&gt;" SearchSteps="FuzzySelector" />
                                               </scg:List>
                                             </uix:TargetAnchorable.Anchors>
@@ -358,7 +358,7 @@
                                         <uix:NGetText.Target>
                                           <uix:TargetAnchorable BrowserURL="https://cmpg323-ecopowerlogistics.azurewebsites.net/Orders/Details/2133793" DesignTimeRectangle="419, 520, 1375, 30" DesignTimeScaleFactor="1.25" FriendlyName="'10105'" FullSelectorArgument="&lt;webctrl idx='3' tag='DD' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DD' class='col-sm-10' /&gt;" Guid="d730496e-1e0d-40bb-a8f2-1e774f4fca06" InformativeScreenshot="bd107892abec50bdb194d15b2f4bcdac.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Details - EcoPower_Logistics' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                             <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                 <uix:Target DesignTimeRectangle="144, 520, 275, 40" FriendlyName="'Customer'" FullSelectorArgument="&lt;webctrl idx='3' tag='DT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='DT' class='col-sm-2' aaname='             Customer         ' check:innerText='Customer' /&gt;" SearchSteps="FuzzySelector" />
                                               </scg:List>
                                             </uix:TargetAnchorable.Anchors>
@@ -371,7 +371,7 @@
                                         </uix:NClick.Target>
                                       </uix:NClick>
                                     </Sequence>
-                                    <If Condition="[TestAddress = Address AND TestCustomerId = CustomerId AND TestOrderDate = OrderDate]" sap:VirtualizedContainerService.HintSize="541,630" sap2010:WorkflowViewState.IdRef="If_6">
+                                    <If Condition="[TestAddress.Trim() = Address.Trim() AND TestCustomerId.Trim() = CustomerId.Trim() AND TestOrderDate.Trim() = OrderDate.Trim()]" sap:VirtualizedContainerService.HintSize="541,630" sap2010:WorkflowViewState.IdRef="If_6">
                                       <If.Then>
                                         <Sequence sap:VirtualizedContainerService.HintSize="376,201" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -381,9 +381,7 @@
                                           </sap:WorkflowViewStateService.ViewState>
                                           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="UD_Orders.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="UD_Orders.xaml">
                                             <ui:InvokeWorkflowFile.Arguments>
-                                              <InArgument x:TypeArguments="x:String" x:Key="Address">
-                                                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Address" />
-                                              </InArgument>
+                                              <InArgument x:TypeArguments="x:String" x:Key="Address">[Address]</InArgument>
                                             </ui:InvokeWorkflowFile.Arguments>
                                           </ui:InvokeWorkflowFile>
                                         </Sequence>
