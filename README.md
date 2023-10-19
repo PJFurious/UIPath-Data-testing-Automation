@@ -11,7 +11,7 @@ This UiPath project has been a highly enjoyable and valuable experience, during 
 
 **Delete Data:** In the final step, the project deletes the data from the database and verifies whether the data removal is successful.
 
-#Project Files
+# Project Files
 In the project folder, you will find the following files and resources:
 
 **Main.xaml:** This is the main automation file that orchestrates the entire testing process.
