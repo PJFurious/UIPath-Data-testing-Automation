@@ -11,6 +11,22 @@ This UiPath project has been a highly enjoyable and valuable experience, during 
 
 **Delete Data:** In the final step, the project deletes the data from the database and verifies whether the data removal is successful.
 
+# Using the Automation Program
+**Getting Started**
+1. Launch the Program: When you start the program, you will be prompted to enter the relevant email and password. Please provide the necessary credentials to access the system.
+
+2. Select the Test Type: After entering your credentials, you will have the option to choose what you want to test. You can select from the following test options:
+
+**All**: This option initiates a comprehensive test that covers all aspects of the testing process.
+
+**Orders & OrderDetails:** Selecting this option specifically tests the interactions related to orders and order details.
+
+**Customers:** Choosing this option focuses on testing customer-related interactions.
+
+**Products:** This option is designed to test interactions related to products.
+
+3. Automated Testing: Once you make your choice, the relevant section will be automatically tested by the program. The results of the testing process will be displayed, indicating whether the operation was successful or not. A "TRUE" value will be written back into the Excel file used for testing, signifying a successful test outcome.
+
 # Project Files
 In the project folder, you will find the following files and resources:
 
